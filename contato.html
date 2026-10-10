@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+</head>
+<body>
+    <header>
+        <h1>Entre em contato</h1>
+        <p>Envie uma dúvida, comentário ou sugestão sobre o universo do Front-End.</p>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de contato</h2>
+            <p>Preencha os campos abaixo. Os campos marcados como obrigatórios precisam ser preenchidos.</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" required>
+                </p>
+
+                <p>
+                    <label for="categoria">Categoria:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" selected disabled>Selecione uma categoria</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comentario">Comentário:</label><br>
+                    <textarea id="comentario" name="comentario" rows="6" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Estefany Silva. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
